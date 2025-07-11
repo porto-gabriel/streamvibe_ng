@@ -7,22 +7,28 @@ import { Component } from '@angular/core';
   styleUrl: './filmes.css'
 })
 export class Filmes {
+
+  alternarFavorito() {
+    this.filme1.favorito = !this.filme1.favorito
+  }
+
   filme1 = {
     nome:"Inseption",
     imagem: "/origem.png",
-    sinopse: "Filme de um cara que sonha"
+    sinopse: "Filme de um cara que sonha",
+    favorito: false
   }
 
-  filme2 = {
-    nome: "Oppenheimer",
-    imagem: "/oppenheimer.jpg",
-    sinopse: "Criador da bomba atômica"
-  }
+  // filme2 = {
+  //   nome: "Oppenheimer",
+  //   imagem: "/oppenheimer.jpg",
+  //   sinopse: "Criador da bomba atômica"
+  // }
 
-  filme3 = {
-    nome: "Bingo",
-    imagem: "oppenheimer.jpg",
-    sinopse: "Filme sobre um ator mediano, que cria um programa televisivo "
+  // filme3 = {
+  //   nome: "Bingo",
+  //   imagem: "oppenheimer.jpg",
+  //   sinopse: "Filme sobre um ator mediano, que cria um programa televisivo "
 
   }
-}
+//}
