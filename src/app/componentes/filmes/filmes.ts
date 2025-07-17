@@ -9,13 +9,15 @@ import { Component } from '@angular/core';
 export class Filmes {
 
   alternarFavorito() {
-    this.filme1.favorito = !this.filme1.favorito
+    this.filme1.favorito = !this.filme1.favorito  // Alterna o estado atual do "favorito". Ele recebe o valor contrario do atual vide a !
   }
 
+  // Dados mockados 
   filme1 = {
     nome:"Inseption",
     imagem: "/origem.png",
     sinopse: "Filme de um cara que sonha",
+    genero: "drama",
     favorito: false
   }
 
